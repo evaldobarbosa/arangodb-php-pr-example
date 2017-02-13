@@ -1,0 +1,30 @@
+{
+    "name": "ramcoelho/silex-skeleton",
+    "description": "Silex Skeleton",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "silex/silex": "~1.2",
+        "evaldobarbosa/arango-provider": "dev-develop"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/evaldobarbosa/arangodb-php"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/evaldobarbosa/arango-provider.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "suggest": {
+        "twig/twig": "Twig, the flexible, fast, and secure template language for PHP.",
+        "symfony/twig-bridge": "Symfony Twig Bridge.",
+        "robmorgan/phinx": "Phinx makes it ridiculously easy to manage the database migrations for your PHP app."
+    }
+}
